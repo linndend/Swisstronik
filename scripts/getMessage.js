@@ -12,7 +12,7 @@ const sendShieldedQuery = async (provider, destination, data) => {
 };
 
 async function main() {
-  const contractAddress = "0xf84Df872D385997aBc28E3f07A2E3cd707c9698a";
+  const contractAddress = "0x250482AA2e88c129bfaCf2c5755123c97539d31c";
   const [signer] = await hre.ethers.getSigners();
   const contractFactory = await hre.ethers.getContractFactory("Swisstronik");
   const contract = contractFactory.attach(contractAddress);
